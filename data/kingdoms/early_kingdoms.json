@@ -1,0 +1,148 @@
+{
+  "chunks": [
+    {
+      "id": "indus_valley_001",
+      "content": "The Indus Valley Civilization (also called Harappan Civilization) is the earliest known urban civilization in South Asia, flourishing from approximately 3300 BCE to 1300 BCE. It spanned the northwest regions of modern-day India and Pakistan, centered around the Indus River and its tributaries. Major cities included Mohenjo-daro (in modern Pakistan), Harappa, Dholavira (Gujarat, India), Rakhigarhi (Haryana, India), and Lothal (Gujarat, India). The civilization was remarkable for its advanced urban planning: standardized brick sizes, grid-pattern streets, sophisticated drainage systems, and large granaries. Despite its scale — one of the largest ancient civilizations — no clear kings, palaces, or military structures have been conclusively identified, suggesting a possible priestly or council-based governance. The script remains undeciphered. The civilization declined around 1300 BCE, possibly due to climate change, drought, or shifts in the Ghaggar-Hakra river course.",
+      "metadata": {
+        "title": "Indus Valley Civilization",
+        "era": "ancient",
+        "type": "civilization",
+        "time_period": "3300–1300 BCE",
+        "region": "Northwest India, Pakistan",
+        "cities": ["Mohenjo-daro", "Harappa", "Dholavira", "Rakhigarhi", "Lothal"],
+        "religion_link": "proto-Hindu",
+        "is_first": true,
+        "tags": ["archaeology", "urban", "harappan", "indus", "first civilization"]
+      }
+    },
+    {
+      "id": "ikshvaku_001",
+      "content": "The Ikshvaku dynasty, also called the Solar Dynasty (Suryavansha), is the oldest royal lineage in Hindu tradition. According to the Puranas and the Ramayana, the dynasty was founded by Ikshvaku, son of Vaivasvata Manu (the progenitor of the current human age or Manvantara). The lineage traces from Surya (Sun god) → Vaivasvata Manu → Ikshvaku. The capital was Ayodhya in the Kosala region (modern Uttar Pradesh). This dynasty produced the most revered kings in Hinduism: Harishchandra (known for absolute truthfulness), Sagara, Bhagiratha (who brought the Ganges to earth), Raghu (after whom the lineage is also called Raghuvansha), Dasharatha, and most notably Lord Rama — the seventh avatar of Vishnu. The dynasty is documented in the Ramayana, Puranas, and the Mahabharata. While largely mythological, a historical Ikshvaku dynasty of Andhra (3rd–4th century CE) claimed descent from this lineage to legitimize their rule.",
+      "metadata": {
+        "title": "Ikshvaku Dynasty (Suryavansha)",
+        "era": "mythological",
+        "type": "dynasty",
+        "time_period": "Treta Yuga (mythological) / Satya-Treta Yuga",
+        "region": "Ayodhya, Kosala (modern Uttar Pradesh)",
+        "cities": ["Ayodhya"],
+        "religion_link": "Hindu — Vaishnavism, Rama worship",
+        "is_first": true,
+        "tags": ["ramayana", "rama", "solar dynasty", "suryavansha", "ayodhya", "hinduism", "puranas", "manu"]
+      }
+    },
+    {
+      "id": "kuru_kingdom_001",
+      "content": "The Kuru Kingdom was one of the most powerful and significant kingdoms in early Vedic and Iron Age India, flourishing roughly between 1200 BCE and 600 BCE with its peak around 1000–800 BCE. It emerged from the union of the Bharata and Puru tribes. The kingdom is considered the first state-level political entity of the Vedic civilization. Capital was Hastinapura (near modern Meerut, Uttar Pradesh), with a second important city at Indraprastha (modern Delhi). The Kuru kingdom is at the center of the Mahabharata epic — the war at Kurukshetra between the Pandavas and Kauravas was fought in the Kuru heartland. Key rulers include Shantanu, Dhritarashtra, Pandu, and Parikshit (the first verifiable post-Mahabharata king). It was the first society to compile and codify Vedic rituals (Shrauta rituals), making it foundational for Brahminical Hinduism. The Kuru kingdom laid the framework for later Mahajanapadas.",
+      "metadata": {
+        "title": "Kuru Kingdom",
+        "era": "vedic",
+        "type": "kingdom",
+        "time_period": "1200–600 BCE",
+        "region": "Haryana, Delhi, Western Uttar Pradesh",
+        "cities": ["Hastinapura", "Indraprastha"],
+        "religion_link": "Hindu — Vedic rituals, Mahabharata",
+        "is_first": true,
+        "tags": ["mahabharata", "vedic", "iron age", "pandavas", "kauravas", "kurukshetra", "kuru", "hastinapura", "indraprastha"]
+      }
+    },
+    {
+      "id": "magadha_001",
+      "content": "Magadha was one of the sixteen Mahajanapadas (great kingdoms) and became the most powerful kingdom of ancient India, forming the base for the first true Indian empire. Located in the fertile Gangetic plains of modern Bihar, with early capital at Rajagriha (modern Rajgir) and later at Pataliputra (modern Patna). The Haryanka dynasty (c. 544–413 BCE) was the first historically verified ruling family. King Bimbisara (c. 543–491 BCE) was the first great ruler — a contemporary of both Gautama Buddha and Mahavira (Jainism founder). He expanded Magadha through diplomacy and conquest. His son Ajatashatru (491–461 BCE) conquered Vaishali (Vajji republic) and fortified Pataliputra. The Nanda dynasty (345–321 BCE) built the first standing army of India. Chandragupta Maurya (321–297 BCE) overthrew the Nandas and founded the Maurya Empire — the largest empire of ancient India — using Magadha as the base. Later, the Gupta Empire (320–550 CE) also arose from this region.",
+      "metadata": {
+        "title": "Magadha Kingdom",
+        "era": "ancient",
+        "type": "kingdom",
+        "time_period": "600 BCE – 185 BCE",
+        "region": "Bihar, Gangetic Plain",
+        "cities": ["Rajagriha", "Pataliputra"],
+        "religion_link": "Buddhist and Jain connections — Bimbisara was patron of Buddha",
+        "is_first": true,
+        "tags": ["magadha", "bimbisara", "ajatashatru", "nanda", "maurya", "chandragupta", "pataliputra", "rajagriha", "mahajanapadas", "buddha", "mahavira"]
+      }
+    },
+    {
+      "id": "mahajanapadas_001",
+      "content": "The Sixteen Mahajanapadas (Mahajanapadas = great kingdoms) were the dominant political entities of ancient India from roughly 600 BCE to 300 BCE. They represented the transition from tribal chiefdoms to organized monarchies and republics. The 16 kingdoms listed in Buddhist texts are: Anga (Bengal/Bihar border), Magadha (Bihar), Kashi (Varanasi, UP), Kosala (Ayodhya/Lucknow, UP), Vajji (republic, Bihar), Malla (Bihar/UP), Chedi (Madhya Pradesh), Vatsa (Allahabad, UP), Kuru (Delhi/Haryana), Panchala (UP), Matsya (Rajasthan), Surasena (Mathura, UP), Assaka (Maharashtra/Andhra border), Avanti (Ujjain, MP), Gandhara (Afghanistan/Pakistan), and Kamboja (Afghanistan/Pakistan). Among these, Magadha, Kosala, Avanti, and Vatsa emerged as the four most powerful. Eventually Magadha under the Nanda and Maurya dynasties absorbed all others to form the first pan-Indian empire. The era coincides with the lives of Gautama Buddha (563–483 BCE) and Mahavira (599–527 BCE).",
+      "metadata": {
+        "title": "Sixteen Mahajanapadas",
+        "era": "ancient",
+        "type": "political_era",
+        "time_period": "600–300 BCE",
+        "region": "North India, Deccan, Northwest",
+        "cities": ["Varanasi", "Ayodhya", "Pataliputra", "Ujjain", "Mathura", "Allahabad"],
+        "religion_link": "Buddhist and Jain — arose during this era",
+        "tags": ["mahajanapadas", "16 kingdoms", "magadha", "kosala", "avanti", "vajji", "republic", "buddha", "mahavira", "ancient india"]
+      }
+    },
+    {
+      "id": "maurya_empire_001",
+      "content": "The Maurya Empire (321–185 BCE) was the first pan-Indian empire and the largest empire of ancient India, covering most of the Indian subcontinent and extending into Afghanistan and Balochistan. Founded by Chandragupta Maurya (321–297 BCE) with guidance from the brilliant strategist Chanakya (Kautilya), who wrote the Arthashastra — an ancient treatise on statecraft, economics, and military strategy. Capital: Pataliputra (modern Patna, Bihar). Key rulers: Chandragupta Maurya (founder), Bindusara (son), and Ashoka the Great (273–232 BCE). Ashoka's rule represents the peak of the empire. After witnessing the devastation of the Kalinga War (modern Odisha, c. 261 BCE) in which over 100,000 died, Ashoka converted to Buddhism, renounced war, and spread the dhamma (Buddhist ethics) across Asia. He erected pillars and edicts across India (many still standing). The Ashoka Chakra (from his Lion Capital at Sarnath) appears on India's national flag today. The empire declined after Ashoka's death and ended with Pushyamitra Shunga's rebellion (185 BCE).",
+      "metadata": {
+        "title": "Maurya Empire",
+        "era": "ancient",
+        "type": "empire",
+        "time_period": "321–185 BCE",
+        "region": "Pan-India, Afghanistan, Balochistan",
+        "cities": ["Pataliputra", "Taxila", "Ujjain", "Tosali"],
+        "religion_link": "Buddhist — Ashoka's conversion and spread of Buddhism",
+        "tags": ["maurya", "chandragupta", "ashoka", "chanakya", "arthashastra", "kalinga", "buddhism", "pataliputra", "empire", "first empire"]
+      }
+    },
+    {
+      "id": "vedic_period_001",
+      "content": "The Vedic Period (c. 1500–500 BCE) is the era when the Vedas — the oldest sacred texts of Hinduism — were composed and transmitted orally. It is divided into the Early Vedic Period (1500–1000 BCE) and the Later Vedic Period (1000–500 BCE). During the Early Vedic period, the Rigveda was composed in the Punjab/northwest India region. Society was semi-nomadic, organized into tribes (jana) led by chiefs (rajan). The Later Vedic period saw the composition of the Samaveda, Yajurveda, Atharvaveda, Upanishads, and Brahmanas. Society transitioned to settled agricultural communities, the caste system (varna) became codified, and large kingdoms (janapadas) formed. Key concepts originating in this era: dharma, karma, samsara, yoga, and the concept of Brahman (universal soul). The Gangetic plain replaced the northwest as the cultural heartland. Cities like Hastinapura, Kashi (Varanasi), Ayodhya, and Mathura rose to prominence. This era directly preceded and shaped the Mahajanapadas.",
+      "metadata": {
+        "title": "Vedic Period",
+        "era": "vedic",
+        "type": "historical_period",
+        "time_period": "1500–500 BCE",
+        "region": "Northwest India, then Gangetic Plain",
+        "cities": ["Hastinapura", "Kashi", "Ayodhya", "Mathura"],
+        "religion_link": "Hindu — Vedas, foundational Hinduism",
+        "tags": ["vedic", "rigveda", "vedas", "hinduism", "dharma", "karma", "upanishads", "brahman", "varna", "caste"]
+      }
+    },
+    {
+      "id": "gupta_empire_001",
+      "content": "The Gupta Empire (c. 320–550 CE) is often called the Golden Age of India — a period of extraordinary achievements in science, mathematics, astronomy, literature, philosophy, and art. Founded by Sri Gupta (c. 240–280 CE), the empire reached its peak under Chandragupta I (320–335 CE), Samudragupta (335–375 CE), and Chandragupta II (Vikramaditya, 375–415 CE). Capital: Pataliputra (Patna, Bihar). The mathematician Aryabhata (born 476 CE) calculated pi accurately and proposed the heliocentric model during this era. Kalidasa wrote the Abhijnanasakuntalam and Meghaduta — masterworks of Sanskrit literature. Varahamihira advanced astronomy. The decimal numeral system and concept of zero were formalized. The Gupta era saw the revival and patronage of Hinduism (Vaishnavism in particular) after the Buddhist-dominant Maurya era. The Nalanda University (in Bihar) became a world center of learning. The empire declined due to Huna invasions from Central Asia around 550 CE.",
+      "metadata": {
+        "title": "Gupta Empire",
+        "era": "classical",
+        "type": "empire",
+        "time_period": "320–550 CE",
+        "region": "North India, parts of South India",
+        "cities": ["Pataliputra", "Ujjain", "Nalanda", "Vaishali"],
+        "religion_link": "Hindu — Vaishnavism, Sanskrit revival, Hindu golden age",
+        "tags": ["gupta", "golden age", "aryabhata", "kalidasa", "mathematics", "zero", "chandragupta", "vikramaditya", "nalanda", "vaishnavism", "hinduism"]
+      }
+    },
+    {
+      "id": "hinduism_origins_001",
+      "content": "Hinduism is the world's oldest living religion, with roots stretching back to at least 3000–2000 BCE. Its origins are multi-layered: (1) Indus Valley Civilization contributions: evidence of proto-Shiva figures (Pashupati seal), ritual bathing (Great Bath at Mohenjo-daro), tree worship, and fertility symbols. (2) Vedic tradition (1500–500 BCE): The Rigveda introduced the Vedic gods — Indra (thunder), Agni (fire), Varuna (cosmic order), Soma (ritual drink). The concept of Brahman (universal consciousness) and Atman (individual soul) emerged. (3) Upanishadic philosophy (800–400 BCE): Refined Vedic ideas into the philosophical core: Brahman = Atman, karma, samsara, moksha, and yoga. (4) Puranic Hinduism (300 BCE–1200 CE): Rise of the Trimurti (Brahma the creator, Vishnu the preserver, Shiva the destroyer), devotional worship (bhakti), the ten avatars of Vishnu (Dashavatara) including Rama and Krishna, and the great epics Ramayana and Mahabharata as living scriptures. Major texts: Vedas, Upanishads, Bhagavad Gita, Puranas (18 major), Ramayana, Mahabharata.",
+      "metadata": {
+        "title": "Origins and History of Hinduism",
+        "era": "ancient",
+        "type": "religion",
+        "time_period": "3000 BCE – present",
+        "region": "India (all regions)",
+        "cities": ["Varanasi", "Ayodhya", "Mathura", "Haridwar", "Tirupati"],
+        "religion_link": "Hinduism — foundational",
+        "tags": ["hinduism", "vedas", "upanishads", "brahman", "atman", "karma", "moksha", "trimurti", "vishnu", "shiva", "brahma", "ramayana", "mahabharata", "bhagavad gita", "puranas", "avatars"]
+      }
+    },
+    {
+      "id": "tamil_kingdoms_001",
+      "content": "The Tamil Kingdoms of South India — Chera, Chola, and Pandya — are among the oldest continuous kingdoms in the world, with roots dating to at least 300 BCE and documented by the Sangam literature (300 BCE–300 CE). The Sangam age produced some of the world's oldest secular literature in Tamil, one of the oldest living languages. The Chola dynasty (c. 300 BCE – 1279 CE) had one of the longest reigns in world history. At their peak under Rajaraja Chola I (985–1014 CE) and his son Rajendra Chola I (1014–1044 CE), the Cholas built the magnificent Brihadeeswarar Temple (Thanjavur, Tamil Nadu — a UNESCO World Heritage Site), maintained a powerful navy, and conducted naval expeditions to Southeast Asia (modern Malaysia, Indonesia). The Pandya kingdom controlled Madurai and was known for pearls and trade. The Chera kingdom controlled modern Kerala. These kingdoms were fiercely independent, patronized Tamil literature and Shaivite Hinduism (worship of Shiva), and resisted northern empires including the Mauryas.",
+      "metadata": {
+        "title": "Tamil Kingdoms — Chera, Chola, Pandya",
+        "era": "ancient to medieval",
+        "type": "dynasty",
+        "time_period": "300 BCE – 1279 CE",
+        "region": "Tamil Nadu, Kerala, South India",
+        "cities": ["Madurai", "Thanjavur", "Uraiyur", "Kanchipuram", "Mahabs"],
+        "religion_link": "Hindu — Shaivism, Vaishnavism, Tamil devotional poetry (Sangam)",
+        "tags": ["chola", "chera", "pandya", "tamil", "south india", "sangam", "rajaraja", "rajendra", "brihadeeswarar", "shaivism", "navy", "southeast asia"]
+      }
+    }
+  ]
+}
