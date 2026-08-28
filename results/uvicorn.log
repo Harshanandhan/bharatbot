@@ -1,0 +1,90 @@
+---
+pid: 9800
+cwd: "C:\\Users\\rogga\\OneDrive\\Desktop\\bharatbot"
+command: ".\\.venv\\Scripts\\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8001"
+title: "Start FastAPI on 127.0.0.1:8001"
+status: running  
+started_at: 2026-08-28T02:55:41.987Z
+running_for_ms: 75110    
+---
+INFO:     Started server process [12468]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52753 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52753 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52753 - "POST /ask HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:61356 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61357 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61358 - "POST /ask HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:61359 - "POST /ask HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 411, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\starlette\concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\main.py", line 29, in ask_question
+    from rag import ask
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\rag.py", line 2, in <module>
+    import chromadb
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.api.client import Client as ClientCreator
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\chromadb\api\client.py", line 14, in <module>
+    from chromadb.api.shared_system_client import SharedSystemClient
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\chromadb\api\shared_system_client.py", line 6, in <module>
+    from chromadb.api.base_http_client import BaseHTTPClient
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\chromadb\api\base_http_client.py", line 4, in <module>
+    import orjson as json
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\orjson\__init__.py", line 8, in <module>
+    from .orjson import *
+ImportError: DLL load failed while importing orjson: An Application Control policy has blocked this file.

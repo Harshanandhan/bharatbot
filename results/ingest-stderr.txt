@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\ingest.py", line 2, in <module>
+    import chromadb
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.api.client import Client as ClientCreator
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\chromadb\api\client.py", line 14, in <module>
+    from chromadb.api.shared_system_client import SharedSystemClient
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\chromadb\api\shared_system_client.py", line 6, in <module>
+    from chromadb.api.base_http_client import BaseHTTPClient
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\chromadb\api\base_http_client.py", line 4, in <module>
+    import orjson as json
+  File "C:\Users\rogga\OneDrive\Desktop\bharatbot\.venv\Lib\site-packages\orjson\__init__.py", line 8, in <module>
+    from .orjson import *
+ImportError: DLL load failed while importing orjson: An Application Control policy has blocked this file.
