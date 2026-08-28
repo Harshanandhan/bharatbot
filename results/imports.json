@@ -1,0 +1,90 @@
+{
+  "when_et": "2026-08-27T22:57:23.998550-04:00",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "C:\\Users\\rogga\\OneDrive\\Desktop\\bharatbot\\.venv\\Scripts\\python.exe",
+  "modules": {
+    "fastapi": "0.111.0",
+    "uvicorn": "0.29.0",
+    "groq": "1.7.0",
+    "dotenv": "imported-no-version",
+    "chromadb": "FAIL: ImportError: DLL load failed while importing orjson: An Application Control policy has blocked this file.",
+    "sentence_transformers": "FAIL: ImportError: cannot import name 'NP_SUPPORTED_MODULES' from 'torch._dynamo.utils' (C:\\Users\\rogga\\OneDrive\\Desktop\\bharatbot\\.venv\\Lib\\site-packages\\torch\\_dynamo\\utils.py)",
+    "orjson": "FAIL: ImportError: DLL load failed while importing orjson: An Application Control policy has blocked this file."
+  },
+  "anthropic_installed": false,
+  "main_import": "ok",
+  "app_title": "BharatBot \u2014 Indian History Chatbot",
+  "routes": [
+    {
+      "path": "/openapi.json",
+      "methods": [
+        "GET",
+        "HEAD"
+      ]
+    },
+    {
+      "path": "/docs",
+      "methods": [
+        "GET",
+        "HEAD"
+      ]
+    },
+    {
+      "path": "/docs/oauth2-redirect",
+      "methods": [
+        "GET",
+        "HEAD"
+      ]
+    },
+    {
+      "path": "/redoc",
+      "methods": [
+        "GET",
+        "HEAD"
+      ]
+    },
+    {
+      "path": "/static",
+      "methods": []
+    },
+    {
+      "path": "/",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/health",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/ask",
+      "methods": [
+        "POST"
+      ]
+    }
+  ],
+  "chunk_count": 10,
+  "titles": [
+    "Indus Valley Civilization",
+    "Ikshvaku Dynasty (Suryavansha)",
+    "Kuru Kingdom",
+    "Magadha Kingdom",
+    "Sixteen Mahajanapadas",
+    "Maurya Empire",
+    "Vedic Period",
+    "Gupta Empire",
+    "Origins and History of Hinduism",
+    "Tamil Kingdoms \u2014 Chera, Chola, Pandya"
+  ],
+  "eras": [
+    "ancient",
+    "ancient to medieval",
+    "classical",
+    "mythological",
+    "vedic"
+  ],
+  "groq_key_set": false
+}

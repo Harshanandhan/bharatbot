@@ -2,7 +2,6 @@ from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
-from rag import ask
 
 app = FastAPI(title="BharatBot — Indian History Chatbot")
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -27,5 +26,6 @@ def health():
 def ask_question(query: Query):
     if not query.question.strip():
         raise HTTPException(status_code=400, detail="Question cannot be empty")
+    from rag import ask
     result = ask(query.question, query.history)
     return result

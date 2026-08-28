@@ -1,0 +1,42 @@
+{
+  "when_utc": "2026-08-28T02:56:32.812278+00:00",
+  "when_et": "2026-08-27T22:56:32.812278-04:00",
+  "base": "http://127.0.0.1:8001",
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 15,
+      "body": {
+        "status": "ok"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 10605,
+      "body_preview": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n  <title>BharatBot \u2014 Indian Histor",
+      "contains_bharatbot": true
+    },
+    {
+      "method": "POST",
+      "path": "/ask",
+      "status": 400,
+      "bytes": 37,
+      "body": {
+        "detail": "Question cannot be empty"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ask",
+      "status": 500,
+      "bytes": 21,
+      "body": "Internal Server Error"
+    }
+  ]
+}
