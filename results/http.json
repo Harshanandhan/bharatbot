@@ -1,42 +1,18 @@
-{
-  "when_utc": "2026-08-28T02:56:32.812278+00:00",
-  "when_et": "2026-08-27T22:56:32.812278-04:00",
-  "base": "http://127.0.0.1:8001",
-  "requests": [
-    {
-      "method": "GET",
-      "path": "/health",
-      "status": 200,
-      "content_type": "application/json",
-      "bytes": 15,
-      "body": {
-        "status": "ok"
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/",
-      "status": 200,
-      "content_type": "text/html; charset=utf-8",
-      "bytes": 10605,
-      "body_preview": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n  <title>BharatBot \u2014 Indian Histor",
-      "contains_bharatbot": true
-    },
-    {
-      "method": "POST",
-      "path": "/ask",
-      "status": 400,
-      "bytes": 37,
-      "body": {
-        "detail": "Question cannot be empty"
-      }
-    },
-    {
-      "method": "POST",
-      "path": "/ask",
-      "status": 500,
-      "bytes": 21,
-      "body": "Internal Server Error"
-    }
-  ]
+﻿{
+  "date": "2026-09-09",
+  "python": "3.13.13",
+  "host": "127.0.0.1:8001",
+  "health": {"status": 200, "body": {"status": "ok"}},
+  "root": {"status": 200, "bytes": 10253, "content_type": "text/html; charset=utf-8"},
+  "ask_empty": {"status": 400},
+  "ask_ashoka": {
+    "status": 500,
+    "error": "groq.NotFoundError: model llama-3.3-70b-versatile does not exist or you do not have access to it",
+    "note": "retrieve() succeeded first (MiniLM + Chroma); failure was Groq generation only"
+  },
+  "retrieve_ashoka_top3": ["Maurya Empire", "Magadha Kingdom", "Sixteen Mahajanapadas"],
+  "chroma_count": 10,
+  "groq_api_key": "SET",
+  "groq_models_on_key_sample": ["groq/compound", "openai/gpt-oss-20b", "qwen/qwen3.6-27b", "whisper-large-v3"],
+  "llama-3.3-70b-versatile_on_key": false
 }
