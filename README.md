@@ -1,63 +1,53 @@
-﻿# BharatBot
+# BharatBot
 
-A **lab** FastAPI RAG app over **10 local Indian history chunks** (ChromaDB + `all-MiniLM-L6-v2`). If a Groq key is set **and** that key can call the pinned chat model, `rag.py` generates with `llama-3.3-70b-versatile`. Generation is optional and was **not** proven end-to-end in the latest local pass.
+A **lab** FastAPI RAG app over **10 local Indian history chunks** (ChromaDB + `all-MiniLM-L6-v2`). Optional Groq generation (`llama-3.3-70b-versatile`) when `GROQ_API_KEY` is set and the model call succeeds. If the key is missing or Groq fails, `/ask` returns an honest **retrieval-only** extractive answer with sources — it does **not** 500 the UI.
 
-It is not a general chatbot and not a product. The corpus is one file, `data/kingdoms/early_kingdoms.json`: Indus Valley, Ikshvaku, Kuru, Magadha, the sixteen Mahajanapadas, Maurya, Vedic period, Gupta, Hinduism origins, and the Tamil Chera/Chola/Pandya kingdoms. Retrieval uses ChromaDB collection `indian_history`.
-
-No public demo was running in this pass.
+It is not a general chatbot and not a production product. The corpus is one file, `data/kingdoms/early_kingdoms.json`: Indus Valley, Ikshvaku, Kuru, Magadha, the sixteen Mahajanapadas, Maurya, Vedic period, Gupta, Hinduism origins, and the Tamil Chera/Chola/Pandya kingdoms. Retrieval uses ChromaDB collection `indian_history`.
 
 Author: **Harsha Nandhan Reddy Gajulapalli**  
 Email: **harshanandhanreddy820@gmail.com**  
 GitHub: [Harshanandhan](https://github.com/Harshanandhan)
 
-## Run
+## Live URL
+
+Deployed on Railway (single service: FastAPI + static UI):
+
+- **App:** https://REPLACE_AFTER_DEPLOY.up.railway.app
+- **Health:** `GET /health` → `{status, chunks, groq}`
+- **Ask:** `POST /ask` with `{"question":"..."}` → `{answer, sources, generation, mode}`
+
+Without `GROQ_API_KEY`, mode is `retrieval_only`. To enable Groq generation on Railway: Project → Variables → set `GROQ_API_KEY` to a real key that can call `llama-3.3-70b-versatile`, then redeploy/restart.
+
+## Run locally
 
 ```bash
 python -m venv .venv
 .venv\Scripts\pip install -r requirements.txt
 copy .env.example .env
-# optional: put a real GROQ_API_KEY in .env (must have access to the pinned model)
-python -m uvicorn main:app --host 127.0.0.1 --port 8001
+# optional: put a real GROQ_API_KEY in .env
+python start.py
 ```
 
-`python start.py` is the same server, but it ingests into `./chroma_db` first if collection `indian_history` is missing. Default port is **8001** (`PORT` overrides it). `rag.py` reads `GROQ_API_KEY`. There is no Anthropic path.
+`python start.py` ingests into `./chroma_db` if collection `indian_history` is missing, then serves on `$PORT` (default **8001**).
 
-## Results
+## API
 
-Local run on Windows, Python **3.13.13**, **2026-09-09** (ET / America/New_York). JSON: `results/http.json`. Import probe: `results/imports.json`. Notes: `results/run.txt`.
-
-`uvicorn main:app` on `127.0.0.1:8001`:
-
-| Call | Result |
+| Call | Behavior |
 |---|---|
-| `GET /health` | **200** `{"status":"ok"}` |
-| `GET /` | **200** `static/index.html` (~10253 bytes) |
-| `POST /ask` empty question | **400** |
-| `POST /ask` `Who was Ashoka?` | **500** — Groq `model_not_found` for `llama-3.3-70b-versatile` |
-
-Local-only path that **did** work this pass:
-
-- `pip install -r requirements.txt` (pins include `chromadb==1.5.9`, `groq==1.7.0`)
-- Imports: `chromadb`, `sentence_transformers`, `orjson`, `fastapi`, `uvicorn`, `groq`
-- Chroma collection `indian_history` **count=10**
-- Direct `retrieve("Who was Ashoka?")` → Maurya Empire, Magadha Kingdom, Sixteen Mahajanapadas (MiniLM + Chroma)
-
-`GROQ_API_KEY` was **SET**. `models.list()` for this key did **not** include `llama-3.3-70b-versatile`, so no chat answer was generated. Do not treat this README as a model eval or production readiness claim.
-
-Earlier pass (**2026-08-27**, Python 3.12.10): `/health` worked but `import chromadb` failed under Windows Application Control on `orjson`; that block did **not** reproduce on 2026-09-09.
-
-`GET /health` does not load Chroma, MiniLM, or Groq. `POST /ask` loads retrieve then Groq.
+| `GET /` | Chat UI (Indian heritage theme) |
+| `GET /health` | `{status, chunks, groq}` — never fails if Chroma cold (`chunks` may be `null`) |
+| `POST /ask` | `{answer, sources[{title,era,snippet}], generation, mode}` — `groq` or `retrieval_only` |
 
 ## Layout
 
 ```
 main.py                          GET /  GET /health  POST /ask
-rag.py                           retrieve + Groq llama-3.3-70b-versatile (if key+model)
+rag.py                           retrieve + optional Groq; retrieval_only fallback
 ingest.py                        embed data/kingdoms/*.json into Chroma
-start.py                         ingest if empty, then uvicorn
-static/index.html                chat UI
+start.py                         ingest if empty, then uvicorn ($PORT)
+static/index.html                distinctive chat UI + source chips + mode badge
 data/kingdoms/early_kingdoms.json  10 chunks
-results/                         log + JSON from local runs
+railway.toml / nixpacks.toml     Railway deploy
 ```
 
 ## License
