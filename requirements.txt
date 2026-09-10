@@ -1,6 +1,6 @@
 # Prefer CPU wheels for torch on Railway (heavy ML stack)
 --extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.4.1
+torch==2.6.0+cpu
 chromadb==1.5.9
 sentence-transformers==3.0.1
 groq==1.7.0
